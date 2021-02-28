@@ -1,5 +1,5 @@
 .overlay {
-  background: rgba(242, 243, 245, 0.8);
+  background: var(--background-overlay);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -12,12 +12,12 @@
 }
 
 .container {
-  background: var(--white);
+  background: var(--backBox);
   width: 100%;
   max-width: 400px;
   padding: 2rem 3rem;
   border-radius: 5px;
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 60px (--back);
   text-align: center;
   position: relative;
 }
@@ -45,7 +45,8 @@
   position: absolute;
   right: 0.5rem;
   top: 0.5rem;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.2);
   border: 0;
+  border-radius: 5px;
   font-size: 0px;
 }
