@@ -5,14 +5,11 @@ import { useTheme } from '../contexts/ThemeContext'
 import { shade } from 'polished'
 import styles from '../styles/components/SwitchTheme.module.css'
 
-interface Props {
-  toggleTheme(): void 
-}
 
-const SwitchTheme: React.FC<Props> = () => {
+const SwitchTheme: React.FC = () => {
   const { title, colors } = useContext(ThemeContext)
 
-  const { toggleTheme, theme } = useTheme()
+  const { toggleTheme } = useTheme()
 
   function handleToggle() {
     toggleTheme();
