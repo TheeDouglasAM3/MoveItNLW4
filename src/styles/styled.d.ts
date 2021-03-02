@@ -14,6 +14,7 @@ declare module 'styled-components' {
       background: string;
       backgroundOverlay: string;
       text: string;
+      button: string;
     };
   }
 }

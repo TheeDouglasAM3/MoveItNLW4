@@ -10,6 +10,7 @@ export default {
     backBox: '#FFF',
     background: '#F2F3F5',
     backgroundOverlay: 'rgba(242, 243, 245, 0.8)',
-    text: '#666666'
+    text: '#666666',
+    button: '#666666'
   },
 };
