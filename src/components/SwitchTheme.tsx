@@ -3,6 +3,7 @@ import Switch from 'react-switch'
 import { ThemeContext } from 'styled-components'
 import { useTheme } from '../contexts/ThemeContext'
 import { shade } from 'polished'
+import styles from '../styles/components/SwitchTheme.module.css'
 
 interface Props {
   toggleTheme(): void 
@@ -18,7 +19,7 @@ const SwitchTheme: React.FC<Props> = () => {
   }
 
   return (
-    <div className="switch-theme">
+    <div className={styles.switchTheme}>
       <Switch 
         onChange={handleToggle}
         checked={title === 'dark'}
